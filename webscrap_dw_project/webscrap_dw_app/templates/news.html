@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    {% for n in news %}
+        <div class="post block">
+            <a href="{{ n.link }}" target="_blank">
+                <h2 class="subtitle is-4">{{ n.title }}</h2>
+                <p style="font-size: 12px">Posted at: {{ n.published_date }}</p>
+                <p class="py-3">{{ n.description }}</p>
+            </a>        
+            
+        </div>
+
+        <hr/>
+    {% endfor %}
+{% endblock %}

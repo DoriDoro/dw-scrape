@@ -1,0 +1,1 @@
+web: gunicorn --pythonpath webscrap_dw_project webscrap_dw.wsgi
